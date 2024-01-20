@@ -30,6 +30,8 @@ void swap(int *a, int *b);
 size_t lomuto_partition(int *array, ssize_t low, ssize_t high, size_t size);
 void quicksort(int *array, ssize_t low, ssize_t high, size_t size);
 void counting_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
+void merge(int *array, size_t left, size_t mid, size_t right);
 
 #endif /* SORT_H */
 
