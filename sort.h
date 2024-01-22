@@ -32,6 +32,7 @@ size_t lomuto_partition(int *array, ssize_t low, ssize_t high, size_t size);
 void quicksort(int *array, ssize_t low, ssize_t high, size_t size);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
 void swap_ints(int *a, int *b);
 void max_heapify(int *array, size_t size, size_t base, size_t root);
 void heap_sort(int *array, size_t size);
