@@ -32,6 +32,9 @@ void quicksort(int *array, ssize_t low, ssize_t high, size_t size);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void merge(int *array, size_t left, size_t mid, size_t right);
+void swap_ints(int *a, int *b);
+void max_heapify(int *array, size_t size, size_t base, size_t root);
+void heap_sort(int *array, size_t size);
 
 #endif /* SORT_H */
 
