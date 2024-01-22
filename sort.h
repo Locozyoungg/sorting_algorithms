@@ -17,6 +17,10 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 
+/* Macros for direction in bitonic sort */
+#define UP 1
+#define DOWN 0
+
 /* Function prototypes */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
@@ -34,6 +38,8 @@ void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
+void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow);
+void bitonic_merge(int *array, size_t size, size_t start, size_t seq, char flow);
 void swap_ints(int *a, int *b);
 void max_heapify(int *array, size_t size, size_t base, size_t root);
 void heap_sort(int *array, size_t size);
