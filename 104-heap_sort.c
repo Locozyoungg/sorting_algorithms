@@ -21,12 +21,12 @@ void swap_ints(int *a, int *b)
  */
 void max_heapify(int *array, size_t size, size_t base, size_t root)
 {
-	size_t largest, left, right
+	size_t largest, left, right;
 
 	while ((left = 2 * root + 1) < base)
 	{
 		right = 2 * root + 2;
-		largest = roo
+		largest = root;
 
 		if (array[left] > array[largest] && left < base)
 			largest = left;
@@ -70,6 +70,6 @@ void heap_sort(int *array, size_t size)
 	{
 		swap_ints(array, array + j);
 		print_array(array, size);
-		max_heapify(array, size, j, 0)
+		max_heapify(array, size, j, 0);
 	}
 }
